@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: 01-nginx
+  name: 01-nginx
+spec:
+  containers:
+  - image: nginx:1.15.12
+    name: 01-nginx
+  restartPolicy: Always
